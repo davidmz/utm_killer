@@ -1,0 +1,15 @@
+{
+    "name":     "utm_killer",
+    "version":  "1.0.0",
+    "description":  "utm_* url parameters killer",
+    "icons":    {
+        "128":  "img/logo128.png"
+    },
+    "content_scripts":  [
+        {
+            "matches":  ["http://*/*", "https://*/*"],
+            "js":       ["content-script.js"],
+            "run_at":   "document_start"
+        }
+    ]
+}
